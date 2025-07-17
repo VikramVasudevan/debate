@@ -28,6 +28,7 @@ if __name__ == "__main__":
             label="Motion",
             value="Being Vegan is better for the environment",
             submit_btn="Start Debate",
+            placeholder="Enter a motion to debate",
         )
 
         with gr.Column():
