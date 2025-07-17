@@ -1,6 +1,7 @@
 ---
 title: debate
 app_file: app.py
+python_version: 3.12
 sdk: gradio
 sdk_version: 5.38.0
 ---
