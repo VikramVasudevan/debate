@@ -1,0 +1,23 @@
+proposition_task:
+  description: >
+    Your job is to argue for the motion: {motion}
+  expected_output: >
+    Present your arguments in a concise manner arguing for the {motion}
+  agent: debate_agent
+  output_key: proposition
+
+opposition_task:
+  description: >
+    Your job is to argue against the motion: {motion}
+  expected_output: >
+    Present your arguments in a concise manner arguing against the {motion}
+  agent: debate_agent
+  output_key: opposition
+
+judge_task:
+  description: >
+    Review the arguments for and against the motion: {motion} and decide the winner.
+  expected_output: >
+    Decide the winner of the debate based on the arguments presented
+  agent: judge_agent
+  output_key: decision
