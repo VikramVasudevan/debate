@@ -580,10 +580,6 @@ pytz==2025.2
     #   pandas
 pyvis==0.3.2
     # via crewai
-pywin32==311
-    # via
-    #   docker
-    #   portalocker
 pyyaml==6.0.2
     # via
     #   chromadb
