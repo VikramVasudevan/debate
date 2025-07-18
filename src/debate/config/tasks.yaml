@@ -2,7 +2,7 @@ proposition_task:
   description: >
     Your job is to argue for the motion: {motion}
   expected_output: >
-    Present your arguments in a concise manner arguing for the {motion}
+    Present exactly one argument in a concise manner arguing for the {motion}. The argument should be a single sentence with a clear point and a title.
   agent: debate_agent
   output_key: proposition
 
@@ -10,7 +10,7 @@ opposition_task:
   description: >
     Your job is to argue against the motion: {motion}
   expected_output: >
-    Present your arguments in a concise manner arguing against the {motion}
+    For the argument presented by the proposition_task, present exactly one counter argument in a concise manner arguing against the {motion}. The argument should be a single sentence with a clear point and a title.
   agent: debate_agent
   output_key: opposition
 
@@ -18,6 +18,6 @@ judge_task:
   description: >
     Review the arguments for and against the motion: {motion} and decide the winner.
   expected_output: >
-    Decide the winner of the debate based on the arguments presented
+    Decide the winner of the debate based on the arguments presented and explain why that decision was made.
   agent: judge_agent
   output_key: decision

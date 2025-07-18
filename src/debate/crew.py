@@ -39,7 +39,6 @@ class Debate:
     def proposition_task(self) -> Task:
         self.my_proposition_task = Task(
             config=self.tasks_config["proposition_task"],  # type: ignore[index]
-            output_key="proposition",
             markdown=True
         )
         return self.my_proposition_task
@@ -48,7 +47,6 @@ class Debate:
     def opposition_task(self) -> Task:
         self.my_opposition_task = Task(
             config=self.tasks_config["opposition_task"],  # type: ignore[index]
-            output_key="opposition",
             markdown=True
         )
         return self.my_opposition_task
@@ -58,7 +56,6 @@ class Debate:
         self.my_judge_task = Task(
             config=self.tasks_config["judge_task"],  # type: ignore[index]
             output_file="output/decision.md",
-            output_key="decision",
             markdown=True
         )
         return self.my_judge_task
